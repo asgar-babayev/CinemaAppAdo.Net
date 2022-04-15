@@ -8,7 +8,7 @@ namespace CinemaAppAdoNet.SqlOperations
 {
     public class SqlOperation
     {
-        private const string _connectionString = "Server=DESKTOP-SVLLJGP;Database=CinemaDb;Trusted_Connection=True;";
+        private const string _connectionString = "Server=localhost;Database=CinemaDb;Trusted_Connection=True;";
         public static SqlConnection conn = new SqlConnection(_connectionString);
         public static void Select(string query)
         {

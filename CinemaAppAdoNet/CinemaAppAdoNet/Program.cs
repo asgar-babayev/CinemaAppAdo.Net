@@ -72,7 +72,8 @@ namespace CinemaAppAdoNet
 6-Sessions Crud
 7-Tickets Crud
 8-MoviesGenres Crud
-9-MoviesActors Crud");
+9-MoviesActors Crud
+10-Buy Ticket");
         }
         static void ShowInfoCrud()
         {

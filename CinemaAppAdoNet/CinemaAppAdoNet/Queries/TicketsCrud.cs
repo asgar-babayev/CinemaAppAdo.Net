@@ -49,7 +49,7 @@ namespace CinemaAppAdoNet.Queries
                     string soldDate = Console.ReadLine();
                     Regex regex = new Regex(@"\d{4}-[01]\d-[0-3]\dT[0-2]\d:[0-5]\d:[0-5]\d(?:\.\d+)?Z?");
                     if (!regex.IsMatch(soldDate)) { Console.WriteLine("Enter again"); goto SetSoldDate; }
-                    SqlOperation.Execute($"UPDATE Tickets SET Name = '{soldDate}' WHERE Id = {id}");
+                    SqlOperation.Execute($"UPDATE Tickets SET SoldDate = '{soldDate}' WHERE Id = {id}");
                     break;
                 case 2:
                 SetPlace:
